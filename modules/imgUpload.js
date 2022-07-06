@@ -8,12 +8,12 @@ const pathKey = path.resolve('./serviceaccountkey.json')
 
 // TODO: Sesuaikan konfigurasi Storage
 const gcs = new Storage({
-    projectId: 'eloquent-glow-354902 ',
+    projectId: 'submission-mgce-jkpurmanto',
     keyFilename: pathKey
 })
 
 // TODO: Tambahkan nama bucket yang digunakan
-const bucketName = 'jkprm-storage1'
+const bucketName = 'money-tracker-jkprm'
 const bucket = gcs.bucket(bucketName)
 
 function getPublicUrl(filename) {
